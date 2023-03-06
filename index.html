@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>HTML FORMS</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Demo Form</h1>
+    </header>
+
+    <main>
+        <form action="/" method="GET">
+
+            <section>
+                <h2>Personal information</h2>
+                <ul>
+                    <li>
+                        <label for="username">Your name</label>
+                        <input type="text" name="user-name" id="username">
+                    </li>
+                    <li>
+                        <label for="usermessage">Your message</label>
+                        <textarea name="user-name" id="usermessage"></textarea>
+                    </li>
+                    <li>
+                        <label for="user-age">Your age</label>
+                        <input type="number" step="1" name="user-age" id="userage">
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>More details</h2>
+                <ul>
+                    <li>
+                        <label for="email">Your email</label>
+                        <input type="email" name="user-email" id="useremail">
+                    </li>
+                    <li>
+                        <label for="user-password">Your password</label>
+                        <input type="password" name="user-password" id="userpassword">
+                    </li>
+                    <li>
+                        <label for="user-birth-date">Your date of birth</label>
+                        <input type="date" name="user-birth-date" id="user-birth-date">
+                    </li>
+                    <li></li>
+                </ul>
+            </section>
+
+            <section>
+                <label for="favouritecolor">What is your favourite color</label>
+                <select name="user-favourite-color" id="favouritecolor">
+                    <option value="none">...</option>
+                    <option value="red">RED</option>
+                    <option value="yellow">YELLOW</option>
+                    <option value="blue">BLUE</option>
+                </select>
+            </section>
+
+            <section >
+                <h2> How should we verify your account</h2>
+                <ul>
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-text-message" value="text">
+                        <label for="text-message">Via text message (SMS)</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-phone-number" value="phone">
+                        <label for="phone-number">Via a phone call</label>
+                    </li>
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-for-email" value="email">
+                        <label for="email">Via an email</label>
+                    </li>
+                </ul>
+            </section>
+
+            <hr>
+            <section>
+                <div class="form-control-inline">
+                    <input type="checkbox" name="agreement" id="agree-to-terms">
+                    <label for="agree">Agree to terms</label>
+                </div>
+            </section>
+           
+            <section>
+                <button>Submit</button>
+            </section> 
+
+        </form>  
+    </main>
+</body>
+</html>
